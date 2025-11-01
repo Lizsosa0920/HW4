@@ -5,4 +5,5 @@
 # -------
 
 # First, read tesla prices from TSLA.txt
-
+with open(r"hw4/TSLA.txt") as file:
+  stock_prices = [round(float(line.strip()), 2) for line in file if line.strip() != ""]
